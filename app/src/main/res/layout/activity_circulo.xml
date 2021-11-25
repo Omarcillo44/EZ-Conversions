@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PesosDolar">
+
+    <Button
+        android:id="@+id/botonSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClicksuma"
+        android:text="Convertir"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/borrar"
+        app:layout_constraintEnd_toEndOf="@+id/botonSuma2"
+        app:layout_constraintStart_toStartOf="@+id/botonSuma2" />
+
+    <Button
+        android:id="@+id/borrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:onClick="onClickButtonborrar"
+        android:text="borrar"
+        app:layout_constraintEnd_toEndOf="@+id/borrar2"
+        app:layout_constraintStart_toStartOf="@+id/borrar2"
+        app:layout_constraintTop_toBottomOf="@+id/numeros" />
+
+    <EditText
+        android:id="@+id/numeros"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="29dp"
+
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="29dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numeros2"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="29dp"
+
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="246dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonSuma2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:onClick="onClicksuma2"
+        android:text="Convertir"
+        app:layout_constraintBaseline_toBaselineOf="@+id/borrar2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/borrar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="110dp"
+        android:onClick="onClickButtonborrar2"
+        android:text="borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonSuma2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="34dp"
+        android:gravity="center"
+        android:text="Pesos a Dólares"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/numeros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="38dp"
+        android:gravity="center"
+        android:text="Dólares a Pesos "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/numeros2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

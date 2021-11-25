@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EZConversions">
         <activity
+            android:name=".Onzas"
+            android:exported="true" />
+        <activity
+            android:name=".Circulo"
+            android:exported="true" />
+        <activity
+            android:name=".Watts"
+            android:exported="true" />
+        <activity
             android:name=".PesosDolar"
             android:exported="true" />
         <activity
