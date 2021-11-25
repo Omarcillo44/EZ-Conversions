@@ -15,9 +15,9 @@
         android:layout_marginEnd="31dp"
         app:layout_constraintBottom_toTopOf="@+id/ButtonPesosDolar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@mipmap/ic_logo_background"
         />
 
     <Button
@@ -35,7 +35,7 @@
         app:cornerRadius="5dp"
         app:icon="@mipmap/ic_onzas_foreground"
         app:iconPadding="0dp"
-        app:iconSize="80dp"
+        app:iconSize="60dp"
         app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/button_circulo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,6 @@
     <Button
         android:id="@+id/ButtonPesosDolar"
         style="?attr/materialButtonOutlinedStyle"
-        app:strokeColor="@color/white"
         android:layout_width="348dp"
         android:layout_height="77dp"
         android:layout_marginBottom="22dp"
@@ -57,13 +56,13 @@
         app:cornerRadius="5dp"
         app:icon="@mipmap/ic_dinero_foreground"
         app:iconPadding="0dp"
-        app:iconSize="80dp"
+        app:iconSize="60dp"
         app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/button_onzas"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        />
+        app:strokeColor="@color/white" />
 
     <Button
         android:id="@+id/button_circulo"
@@ -78,7 +77,7 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:cornerRadius="5dp"
-        app:icon="@mipmap/ic_pi_foreground"
+        app:icon="@mipmap/ic_circulo_foreground"
         app:iconPadding="0dp"
         app:iconSize="80dp"
         app:iconTint="#FFFFFF"
@@ -103,9 +102,9 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:cornerRadius="5dp"
-        app:icon="@mipmap/ic_watt_foreground"
+        app:icon="@mipmap/ic_watts"
         app:iconPadding="0dp"
-        app:iconSize="80dp"
+        app:iconSize="60dp"
         app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
