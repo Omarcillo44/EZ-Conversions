@@ -10,11 +10,13 @@
         android:id="@+id/botonSuma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="113dp"
         android:onClick="onClicksuma"
-        android:text="Convertir"
 
-        app:layout_constraintBaseline_toBaselineOf="@+id/borrar"
+        android:text="Convertir"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/botonSuma2"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/botonSuma2" />
 
     <Button
@@ -22,8 +24,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
+        android:layout_marginBottom="113dp"
         android:onClick="onClickButtonborrar"
         android:text="borrar"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/borrar2"
         app:layout_constraintStart_toStartOf="@+id/borrar2"
         app:layout_constraintTop_toBottomOf="@+id/numeros" />
@@ -32,12 +36,14 @@
         android:id="@+id/numeros"
         android:layout_width="0dp"
         android:layout_height="49dp"
-        android:layout_marginStart="29dp"
 
+        android:layout_marginStart="28dp"
         android:layout_marginTop="84dp"
-        android:layout_marginEnd="29dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="70dp"
         android:ems="10"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/botonSuma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,9 +52,9 @@
         android:id="@+id/numeros2"
         android:layout_width="0dp"
         android:layout_height="49dp"
-        android:layout_marginStart="29dp"
 
-        android:layout_marginEnd="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginBottom="246dp"
         android:ems="10"
         android:inputType="numberDecimal"

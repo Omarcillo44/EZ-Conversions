@@ -10,35 +10,49 @@
         android:id="@+id/botonSuma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="113dp"
         android:onClick="onClicksuma"
         android:text="Convertir"
-
-        app:layout_constraintBaseline_toBaselineOf="@+id/borrar"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/botonSuma2"
-        app:layout_constraintStart_toStartOf="@+id/botonSuma2" />
+        app:layout_constraintStart_toStartOf="@+id/botonSuma2"
+        app:layout_constraintTop_toBottomOf="@+id/numeros" />
 
     <Button
         android:id="@+id/borrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="70dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="113dp"
         android:onClick="onClickButtonborrar"
         android:text="borrar"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/borrar2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/borrar2"
-        app:layout_constraintTop_toBottomOf="@+id/numeros" />
+        app:layout_constraintTop_toBottomOf="@+id/numeros"
+        app:layout_constraintVertical_bias="0.288" />
 
     <EditText
         android:id="@+id/numeros"
-        android:layout_width="0dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="29dp"
+        android:layout_width="357dp"
+        android:layout_height="55dp"
 
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="40dp"
         android:ems="10"
         android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/botonSuma"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,9 +60,9 @@
         android:id="@+id/numeros2"
         android:layout_width="0dp"
         android:layout_height="49dp"
-        android:layout_marginStart="29dp"
 
-        android:layout_marginEnd="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginBottom="246dp"
         android:ems="10"
         android:inputType="numberDecimal"
@@ -60,29 +74,36 @@
         android:id="@+id/botonSuma2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="65dp"
+        android:layout_marginBottom="110dp"
         android:onClick="onClicksuma2"
         android:text="Convertir"
-        app:layout_constraintBaseline_toBaselineOf="@+id/borrar2"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/borrar2"
+        app:layout_constraintTop_toBottomOf="@+id/numeros2" />
 
     <Button
         android:id="@+id/borrar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
         android:layout_marginEnd="47dp"
         android:layout_marginBottom="110dp"
         android:onClick="onClickButtonborrar2"
         android:text="borrar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/botonSuma2" />
+        app:layout_constraintEnd_toStartOf="@+id/botonSuma2"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="34dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="75dp"
         android:layout_marginBottom="34dp"
         android:gravity="center"
@@ -91,8 +112,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/numeros"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView2"
