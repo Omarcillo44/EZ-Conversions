@@ -17,11 +17,11 @@ public class PesosDolar extends AppCompatActivity {
         setContentView(R.layout.activity_pesos_dolar);
 
     }
+
     Double resultado;
     Double resultado2;
     Double numero1;
     Double numero2;
-
 
 
 
