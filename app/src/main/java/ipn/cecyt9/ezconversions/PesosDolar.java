@@ -25,7 +25,6 @@ public class PesosDolar extends AppCompatActivity {
 
 
 
-
     public void onClickOperacionCapturaNumero1(View miView)
     {
         TextView tv = (TextView) findViewById(R.id.numeros) ;
