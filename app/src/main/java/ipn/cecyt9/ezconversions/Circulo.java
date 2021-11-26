@@ -35,7 +35,7 @@ public class Circulo extends AppCompatActivity {
         TextView tv = (TextView) findViewById(R.id.numeros) ;
 
         try {
-            resultado = numero1 * 0.047;
+            resultado = numero1 * 6.2831;
 
             tv.setText(resultado.toString());
         }catch(NumberFormatException nfe){
