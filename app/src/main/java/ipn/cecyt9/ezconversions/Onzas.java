@@ -14,7 +14,7 @@ public class Onzas extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pesos_dolar);
+        setContentView(R.layout.activity_onzas);
 
     }
     Double resultado;
